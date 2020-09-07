@@ -1,6 +1,6 @@
 using System;
 
-namespace footballTeams
+namespace footballClubs
 {
     public class WeatherForecast
     {
