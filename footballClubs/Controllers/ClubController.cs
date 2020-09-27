@@ -16,7 +16,7 @@ namespace footballClubs.Controllers
         /// HTTP Status showing it was found or that there is an error. And the list of people records.
         /// </returns>
         /// <response code="200">Returns the list of Club records</response>
-        [HttpGet]
+        [HttpGet("/counter")]
         public ActionResult<IEnumerable<Club>> Get()
         {
             List<Club> clubList = new List<Club>();

@@ -1,5 +1,12 @@
 # Grafana Sample
 
+## Creating Docker Images
+
+´´´
+cd footballClubs
+docker build -f Dockerfile -t footballclubs .
+´´´
+
 ## Grafana
 
 ### Configure Data Source
