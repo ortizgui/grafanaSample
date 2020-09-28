@@ -4,7 +4,7 @@ import threading
 
 import requests
 
-endpoints = ('counter', 'wrong-path', 'error')
+endpoints = ('counter', 'gauge', 'histogram')
 
 
 def run():
