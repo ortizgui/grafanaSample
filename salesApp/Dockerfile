@@ -14,4 +14,4 @@ RUN mkdir /app
 WORKDIR /app
 
 COPY --from=build-env /app/out ./
-ENTRYPOINT ["dotnet", "footballClubs.dll"]
+ENTRYPOINT ["dotnet", "salesApp.dll"]

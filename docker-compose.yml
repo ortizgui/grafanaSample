@@ -1,13 +1,19 @@
 version : '3'
  
 services:
-  footballclubs:
-    image: footballclubs
+  salesapp:
+    image: salesapp
     ports:
       - 8082:8080
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://*:8080
+    networks:
+      - dotnetcorepromgrafana
+
+  generator:
+    build:
+      context: generator
     networks:
       - dotnetcorepromgrafana
 
@@ -24,7 +30,7 @@ services:
   grafana: 
     image: grafana/grafana
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=P@ssw0rd
+      - GF_SECURITY_ADMIN_PASSWORD=admin
     restart: always
     ports:
       - 3000:3000
