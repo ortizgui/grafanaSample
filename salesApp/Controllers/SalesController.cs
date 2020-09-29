@@ -41,7 +41,7 @@ namespace salesApp.Controllers
                     LabelNames = new[] {"method"}
                 });
 
-            if (rand.Next(1, 101) <= 55)
+            if (rand.Next(1, 101) <= 51)
             {
                 metric.WithLabels(HttpContext.Request.Method).Inc();
             }
